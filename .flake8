@@ -1,0 +1,7 @@
+[flake8]
+max-line-length = 90
+exclude = .tox
+max-complexity = 10
+per-file-ignores =
+  # The output from examples are longer than the max line length defined above
+  examples/*.py:E501

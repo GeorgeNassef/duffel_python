@@ -1,0 +1,18 @@
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = false
+ignore-module = true
+exclude = ["setup.py", "examples"]
+ignore-regex = ["^test_.*"]
+fail-under = 95
+quiet = false
+
+[tool.pyright]
+include = ["duffel_api", "tests", "examples"]
+pythonVersion = "3.9"
+verboseOutput = true # Specifies whether output logs should be verbose. This is useful when diagnosing certain problems like import resolution issues.
+typeCheckingMode = "basic"
+
+[tool.mypy]
+files = ["duffel_api", "tests", "examples"]
+python_version = "3.9"
